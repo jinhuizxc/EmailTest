@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_text_circle"
+            android:gravity="center"
+            android:text="网"
+            android:textColor="#007AFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_title"
+            android:text="From"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_biaoji"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/n_"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/image_biaoji2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/nd"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_name"
+            android:layout_marginRight="20dp"
+            android:text="06月15日"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ju" />
+
+        <TextView
+            android:id="@+id/tv_laiyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/image_jiantou"
+            android:layout_toLeftOf="@+id/image_jiantou"
+            android:layout_toRightOf="@id/tv_title"
+            android:ellipsize="end"
+            android:enabled="true"
+            android:lines="1"
+            android:paddingRight="2dp"
+            android:text="转发：来自***自***自***自***自***自*****"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_laiyuan"
+            android:layout_below="@id/tv_laiyuan"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/image_jiantou"
+            android:layout_toRightOf="@id/tv_title"
+            android:ellipsize="end"
+            android:enabled="true"
+            android:lines="2"
+            android:paddingRight="4dp"
+            android:text="转发：来自***自***自***自***自***自*****"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

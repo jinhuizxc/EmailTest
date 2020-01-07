@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_zhoubian"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f4f4f5" >
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/no" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mail_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mail_from_simple"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/mail_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mial_form_more_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mail_from_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="发件人："
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mail_from_more_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/mail_from_more"
+                    android:text="网易云音乐"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mail_from_more_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/mail_from_more"
+                    android:text="ClouldMusic@163.com"
+                    android:textColor="#7F7F7F"
+                    android:layout_below="@id/mail_from_more_name"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            
+            
+            
+            <RelativeLayout
+                android:id="@+id/mail_add_more_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/mail_add_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="收件人："
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="14sp" />
+
+				<com.example.emailtest.view.NoScrollListView
+				    android:id="@+id/mail_add_more_lv"
+				    android:layout_width="match_parent"
+				 	android:layout_height="wrap_content"
+				 	android:layout_toRightOf="@id/mail_add_more"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/mail_chaosong_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mail_chaosong_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="    抄送："
+                    android:gravity="right"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="14sp" />
+
+				<com.example.emailtest.view.NoScrollListView
+				    android:id="@+id/mail_chaosong_more_lv"
+				    android:layout_width="match_parent"
+				 	android:layout_height="wrap_content"
+				 	android:layout_toRightOf="@id/mail_chaosong_more"/>
+            </RelativeLayout>
+            
+            
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/mail_time_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="    时间："
+                    android:gravity="right"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="14sp" />
+
+				<TextView 
+				    android:id="@+id/mail_time_more_time"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="2016年6月12日 18:45:46"
+				    android:textSize="14sp"
+				    android:textColor="#7F7F7F"
+				    android:layout_toRightOf="@id/mail_time_more"
+				    />
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="0.2" >
+
+            <TextView
+                android:id="@+id/setting_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="top"
+                android:text="详情"
+                android:textColor="#4F72FE"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+        
+        
+        
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <ListView
+            android:id="@+id/lv_mailattachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/wv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f6f6f6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/image_xingbiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/kf" />
+
+        <ImageView
+            android:id="@+id/image_huifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/kl" />
+
+        <ImageView
+            android:id="@+id/image_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/kc" />
+
+        <ImageView
+            android:id="@+id/image_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:src="@drawable/kg" />
+    </LinearLayout>
+
+</LinearLayout>

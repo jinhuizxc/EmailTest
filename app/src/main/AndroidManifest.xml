@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.emailtest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.example.emailtest.email.WelcomeAcivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.emailtest.email.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.emailtest.email.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.emailtest.email.LoginAllActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.emailtest.email.MailListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.emailtest.email.MailDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.WriteActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.SettingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.OneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.WenJianActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.MoreActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.JiShiBenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.clander.CalendarActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.BuildActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.MyEmailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.MeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.WriteJiShiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.NoteDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.NoteXiuGaiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.MoveJiShiActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.NotePadDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.AllMailListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.emailtest.email.TongXunLuActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

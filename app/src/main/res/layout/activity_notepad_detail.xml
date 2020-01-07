@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_zhoubian"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f4f4f5" >
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/no" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:paddingTop="5dp">
+        
+        <TextView 
+            android:id="@+id/notepad_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年6月30日 11:34:17"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            />
+        <TextView 
+            android:id="@+id/notepad_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未分类"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"/>
+        
+        <TextView 
+            android:id="@+id/notepad_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/notepad_time"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"/>
+        <View 
+            android:id="@+id/notepad_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"
+            android:layout_below="@id/notepad_name"
+            android:layout_marginTop="5dp"/>
+        
+        <WebView 
+            android:id="@+id/notepad_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/notepad_view"
+            android:scrollbars="none"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

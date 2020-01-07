@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/image_tou"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_tou"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/image_tou"
+            android:text="sss"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/image_biaoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nd"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_guige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_tou"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/image_tou"
+            android:layout_below="@id/tv_name"
+            android:ellipsize="end"
+            android:enabled="true"
+            android:lines="1"
+            android:text="sss"
+            android:textColor="#e2e2e2"
+            android:textSize="14sp" />
+        
+
+        <ImageView
+            android:id="@+id/image_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ju" />
+        
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_jiantou"
+            android:layout_marginRight="10dp"
+            android:text="sss"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

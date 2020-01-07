@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" 
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvtext"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="阿斯asds发生" />
+    
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sw"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="22dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
