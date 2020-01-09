@@ -14,6 +14,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
+        android:name=".email.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,8 +23,17 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+       <!-- <activity
+            android:name=".test.TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
         <activity
-            android:name="com.example.emailtest.email.WelcomeAcivity"
+            android:name="com.example.emailtest.ui.activity.welcome.WelcomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,44 +41,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name="com.example.emailtest.email.MainActivity"
+            android:name="com.example.emailtest.ui.activity.main.MainActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.example.emailtest.email.LoginActivity"
+            android:name=".ui.activity.login.EmailLoginActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.example.emailtest.email.LoginAllActivity"
+            android:name=".ui.activity.login.AddAccountActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.example.emailtest.email.MailListActivity"
+            android:name="com.example.emailtest.ui.activity.MailListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.example.emailtest.email.MailDetailActivity"
+            android:name="com.example.emailtest.ui.activity.MailDetailActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.WriteActivity"
+            android:name=".ui.activity.write.WriteEmailActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.SettingActivity"
+            android:name="com.example.emailtest.ui.activity.SettingActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.OneActivity"
+            android:name="com.example.emailtest.ui.activity.OneActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.WenJianActivity"
+            android:name="com.example.emailtest.ui.activity.WenJianActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.MoreActivity"
+            android:name="com.example.emailtest.ui.activity.MoreActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.JiShiBenActivity"
+            android:name="com.example.emailtest.ui.activity.JiShiBenActivity"
             android:screenOrientation="portrait"/>
 
         <activity
@@ -76,43 +87,43 @@
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.BuildActivity"
+            android:name="com.example.emailtest.ui.activity.BuildActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.MyEmailActivity"
+            android:name="com.example.emailtest.ui.activity.MyEmailActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.MeActivity"
+            android:name="com.example.emailtest.ui.activity.MeActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.WriteJiShiActivity"
+            android:name="com.example.emailtest.ui.activity.WriteJiShiActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.NoteDetailActivity"
+            android:name="com.example.emailtest.ui.activity.NoteDetailActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.NoteXiuGaiActivity"
+            android:name="com.example.emailtest.ui.activity.NoteXiuGaiActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.MoveJiShiActivity"
+            android:name="com.example.emailtest.ui.activity.MoveJiShiActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.NotePadDetailActivity"
+            android:name="com.example.emailtest.ui.activity.NotePadDetailActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.AllMailListActivity"
+            android:name="com.example.emailtest.ui.activity.AllMailListActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.example.emailtest.email.TongXunLuActivity"
+            android:name="com.example.emailtest.ui.activity.TongXunLuActivity"
             android:screenOrientation="portrait"/>
 
     </application>

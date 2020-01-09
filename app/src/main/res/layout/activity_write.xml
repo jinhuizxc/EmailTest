@@ -1,13 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:id="@+id/mRootView"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/re_1"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/height_50dp"
         android:background="#f6f6f6">
 
         <Button
@@ -16,8 +18,9 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:layout_margin="@dimen/marginSize_10dp"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/pf"
+            android:background="@drawable/select_gray"
             android:gravity="center"
             android:text="取消"
             android:textColor="#474747"
@@ -29,8 +32,9 @@
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_margin="@dimen/marginSize_10dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/pe"
+            android:background="@drawable/select_blue"
             android:gravity="center"
             android:text="发送"
             android:textColor="#ffffff"
@@ -70,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:text="收件人：" />
 
-                <com.example.emailtest.mail.util.MyGridViewBut
+                <com.example.emailtest.utils.MyGridView
                     android:id="@+id/noScrollgridview"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -210,84 +214,116 @@
                 android:layout_marginTop="10dp"
                 android:background="#dfdfdf" />
 
-            <EditText
-                android:id="@+id/ed_com"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:layout_margin="10dp"
-                android:background="#ffffff"
-                android:gravity="top"
-                android:hint="内容"
-                android:paddingTop="10dp"
-                android:textColorHint="#b4b4b4"
-                android:textSize="13sp" />
-
-            <RelativeLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/image_number"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/ed_com"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
+                    android:background="#ffffff"
+                    android:gravity="top"
+                    android:hint="内容"
+                    android:paddingTop="10dp"
+                    android:textColorHint="#b4b4b4"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/j4" />
+                    android:layout_gravity="right|bottom"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:text=""
-                    android:textColor="#ffffff" />
-            </RelativeLayout>
+                    <!--文件链接-->
+                    <LinearLayout
+                        android:id="@+id/ll_link"
+                        android:layout_width="@dimen/marginSize_50dp"
+                        android:layout_height="@dimen/marginSize_40dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="20dp">
 
-            <LinearLayout
-                android:id="@+id/ll_caozuo"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="#e2e2e2"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="8dp"
-                android:visibility="gone">
+                        <ImageView
+                            android:id="@+id/image_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/j4" />
 
-                <ImageView
-                    android:id="@+id/image_phone"
-                    android:layout_width="0.0dip"
-                    android:layout_height="30.0dip"
-                    android:layout_weight="1.0"
-                    android:src="@drawable/k1" />
+                        <TextView
+                            android:id="@+id/tv_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textColor="@color/color_blue" />
+                    </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/image_pic"
-                    android:layout_width="0.0dip"
-                    android:layout_height="30.0dip"
-                    android:layout_weight="1.0"
-                    android:src="@drawable/jy" />
+                    <!--底部布局-->
+                    <LinearLayout
+                        android:id="@+id/ll_caozuo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@color/color_deep_gray"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
 
-                <ImageView
-                    android:id="@+id/image_file"
-                    android:layout_width="0.0dip"
-                    android:layout_height="30.0dip"
-                    android:layout_weight="1.0"
-                    android:src="@drawable/k3" />
-            </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_50dp"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
 
-            <com.example.emailtest.mail.util.MyGridViewBut
-                android:id="@+id/pre_view"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginTop="10dip"
-                android:layout_weight="1"
-                android:horizontalSpacing="0dip"
-                android:numColumns="3"
-                android:visibility="gone" />
+                            <ImageView
+                                android:id="@+id/image_phone"
+                                android:layout_width="0.0dip"
+                                android:layout_height="30.0dip"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/k1" />
+
+                            <ImageView
+                                android:id="@+id/image_pic"
+                                android:layout_width="0.0dip"
+                                android:layout_height="30.0dip"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/jy" />
+
+                            <ImageView
+                                android:id="@+id/image_file"
+                                android:layout_width="0.0dip"
+                                android:layout_height="30.0dip"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/k3" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_blue" />
+
+                        <GridView
+                            android:id="@+id/grid_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_200dp"
+                            android:layout_weight="1"
+                            android:horizontalSpacing="0dip"
+                            android:numColumns="3"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
         </LinearLayout>
     </ScrollView>
 

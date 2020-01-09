@@ -135,7 +135,7 @@
 
             </LinearLayout>
 
-            <com.example.emailtest.mail.util.MyGridViewBut
+            <com.example.emailtest.utils.MyGridView
                 android:id="@+id/pre_view"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"

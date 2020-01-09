@@ -33,9 +33,9 @@ import android.widget.Toast;
 
 import com.example.emailtest.R;
 import com.example.emailtest.db.ClanderService;
-import com.example.emailtest.mail.util.Stack;
+import com.example.emailtest.utils.Stack;
 import com.example.emailtest.view.NoScrollListView;
-import com.example.emailtest.email.BuildActivity;
+import com.example.emailtest.ui.activity.BuildActivity;
 
 
 /**

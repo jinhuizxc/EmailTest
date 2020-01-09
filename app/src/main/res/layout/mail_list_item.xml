@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp" >
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/tv_title"
@@ -31,8 +31,8 @@
             android:layout_toRightOf="@id/tv_title"
             android:text="From"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/image_biaoji"
@@ -47,18 +47,18 @@
             android:id="@+id/image_biaoji2"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_toRightOf="@id/tv_name"
             android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_name"
             android:background="@drawable/nd"
             android:scaleType="fitXY"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/tv_name"
+            android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
             android:text="06月15日"
             android:textSize="14sp" />
@@ -77,8 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_name"
             android:layout_marginLeft="8dp"
-            android:layout_toEndOf="@+id/image_jiantou"
             android:layout_toLeftOf="@+id/image_jiantou"
+            android:layout_toEndOf="@+id/image_jiantou"
             android:layout_toRightOf="@id/tv_title"
             android:ellipsize="end"
             android:enabled="true"
@@ -92,8 +92,8 @@
             android:id="@+id/tv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/tv_laiyuan"
             android:layout_below="@id/tv_laiyuan"
+            android:layout_alignRight="@+id/tv_laiyuan"
             android:layout_marginLeft="8dp"
             android:layout_toEndOf="@+id/image_jiantou"
             android:layout_toRightOf="@id/tv_title"

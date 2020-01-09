@@ -2,23 +2,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f4f4f5"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/ll_zhoubian"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#f4f4f5" >
-        
+        android:layout_height="@dimen/height_50dp"
+        android:background="#f4f4f5">
+
         <Button
             android:id="@+id/image_quexiao"
             android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginSize_10dp"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/pf"
-            android:padding="10dp"
+            android:background="@drawable/select_gray"
             android:text="取消"
             android:textColor="#474747"
             android:textSize="12sp" />
@@ -27,11 +27,11 @@
             android:id="@+id/image_xiayibu"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginSize_10dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:background="@drawable/pe"
-            android:padding="10dp"
+            android:background="@drawable/select_blue"
             android:text="登录"
             android:textColor="#ffffff"
             android:textSize="12sp" />
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_centerVertical="true"
-            android:text=""
+            android:text="title"
             android:textColor="#000000"
             android:textSize="16sp" />
     </RelativeLayout>
@@ -50,31 +50,30 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="0.8dp"
-        android:layout_marginTop="10dp"
+
         android:background="#dfdfdf" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/height_50dp"
         android:background="#ffffff"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp" >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/marginSize_10dp"
             android:text="账号:" />
 
         <EditText
             android:id="@+id/ed_user"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_weight="1"
             android:background="@null"
-            android:hint="example@company.com"/>
+            android:hint="example@company.com" />
     </LinearLayout>
 
     <View
@@ -84,26 +83,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/height_50dp"
         android:background="#ffffff"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp" >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/marginSize_10dp"
             android:text="密码:" />
 
         <EditText
             android:id="@+id/ed_pwd"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_weight="1"
             android:background="@null"
-            android:inputType="textPassword"
-            android:hint="邮箱密码" />
+            android:hint="邮箱密码"
+            android:inputType="textPassword" />
     </LinearLayout>
 
 

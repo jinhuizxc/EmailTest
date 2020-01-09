@@ -10,6 +10,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // 解决方法:  Annotation processors must be explicitly declared now.
+        // The following dependencies on the compile classpath are found to contain annotation processor.
+        // 添加如下配置就OK了
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
     }
     buildTypes {
         release {
@@ -30,6 +40,15 @@ dependencies {
 
     implementation 'com.sun.mail:android-mail:1.6.2'
     implementation 'com.sun.mail:android-activation:1.6.2'
+
+    // 配置注解，避免getter/setter方法
+    implementation 'org.projectlombok:lombok:1.18.6'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+
+    implementation 'com.blankj:utilcode:1.22.10'
+
+
+
 
 
 }

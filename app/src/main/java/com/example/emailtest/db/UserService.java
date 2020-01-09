@@ -15,10 +15,14 @@ public class UserService {
 
 	private SqliteHelper helper;
 
-	public UserService(Context ctx) {
-		helper = new SqliteHelper(ctx);
+	public UserService(Context context) {
+		helper = new SqliteHelper(context);
 	}
 
+	/**
+	 * 添加用户
+	 * @param user
+	 */
 	public void addUser(User user) {
 		SQLiteDatabase db = null;
 		String sql = "insert into mailUser(username,pwd,ismain) values(?,?,?)";
@@ -36,6 +40,10 @@ public class UserService {
 		}
 	}
 
+	/**
+	 * 查询用户
+	 * @return
+	 */
 	public List<User> findUserAll() {
 		List<User> list = new ArrayList<User>();
 		SQLiteDatabase db = null;
@@ -66,7 +74,12 @@ public class UserService {
 		}
 		return list;
 	}
-	
+
+	/**
+	 * 是否存在该用户
+	 * @param username
+	 * @return
+	 */
 	public boolean hasUser(String username) {
 		boolean has = false;
 		SQLiteDatabase db = null;
@@ -91,7 +104,11 @@ public class UserService {
 		}
 		return has;
 	}
-	
+
+	/**
+	 * 更新用户名
+	 * @param username
+	 */
 	public void update(String username){
 		SQLiteDatabase db = null;
 		String sql = "update mailUser set ismain = 1 where username = ?";
@@ -125,7 +142,11 @@ public class UserService {
 			}
 		}
 	}
-	
+
+	/**
+	 * 删除用户
+	 * @param username
+	 */
 	public void deleteUser(String username) {
 		SQLiteDatabase db = null;
 		String sql = "delete from mailUser where username = ?";

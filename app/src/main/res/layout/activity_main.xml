@@ -2,13 +2,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/title_bar"
         android:layout_width="fill_parent"
         android:layout_height="45dp"
-        android:background="#f6f6f6" >
+        android:background="#f6f6f6">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
             android:gravity="center_vertical"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp" >
+            android:paddingRight="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -40,34 +40,34 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:scrollbars="none" >
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/all_mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/icon_all_mail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:background="@drawable/or" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_toEndOf="@+id/icon_all_mail"
                     android:layout_toRightOf="@+id/icon_all_mail"
                     android:text="所有邮件"
@@ -102,15 +102,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:padding="16dp" 
+                android:padding="16dp"
                 android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/icon_mail_star"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:background="@drawable/ok" />
 
@@ -118,8 +118,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_toEndOf="@id/icon_mail_star"
                     android:layout_toRightOf="@id/icon_mail_star"
                     android:text="星际邮件"
@@ -137,12 +137,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#f2f2f2"
-                android:paddingBottom="4dp"
-                android:paddingEnd="0dp"
-                android:paddingLeft="12dp"
-                android:paddingRight="0dp"
                 android:paddingStart="12dp"
+                android:paddingLeft="12dp"
                 android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="4dp"
                 android:text="应用"
                 android:textColor="#323232" />
 
@@ -151,14 +151,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/icon_edit_book"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:background="@drawable/ot" />
 
@@ -166,8 +166,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_toEndOf="@id/icon_edit_book"
                     android:layout_toRightOf="@id/icon_edit_book"
                     android:text="记事本"
@@ -191,14 +191,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/icon_msg_book"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:background="@drawable/g3" />
 
@@ -206,8 +206,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_toEndOf="@id/icon_msg_book"
                     android:layout_toRightOf="@id/icon_msg_book"
                     android:text="通讯录"
@@ -231,14 +231,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/icon_more_app"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:background="@drawable/p0" />
 
@@ -246,8 +246,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_toEndOf="@id/icon_more_app"
                     android:layout_toRightOf="@id/icon_more_app"
                     android:text="更多应用"
@@ -265,12 +265,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#f2f2f2"
-                android:paddingBottom="4dp"
-                android:paddingEnd="0dp"
-                android:paddingLeft="12dp"
-                android:paddingRight="0dp"
                 android:paddingStart="12dp"
+                android:paddingLeft="12dp"
                 android:paddingTop="4dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="4dp"
                 android:text="账户"
                 android:textColor="#323232" />
 
@@ -282,18 +282,19 @@
                 android:divider="@null"
                 android:listSelector="@android:color/transparent"
                 android:scrollbars="vertical" />
-             <RelativeLayout
+
+            <RelativeLayout
                 android:id="@+id/main_rl_adduser"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                   	android:paddingLeft="16dp"
-                   	android:paddingTop="16dp"
-                   	android:paddingBottom="16dp"
-                   	android:paddingRight="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="16dp"
                     android:text="添加账户..."
                     android:textColor="#000"
                     android:textSize="16sp" />

@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/ll_zhoubian"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#f4f4f5" >
+        android:layout_height="@dimen/height_50dp"
+        android:background="#f4f4f5">
 
         <ImageView
             android:id="@+id/image_back"
